@@ -1,0 +1,44 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Age Calculator using javascript</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input_box">
+        <h1 class="text-center">Age Calculator</h1>
+
+        <div class="text-center">
+          <label for="birth_date"
+            >Date of Birth: <input type="date" id="date_of_birth"
+          /></label>
+
+          <label for="given_date"
+            >Given date: <input type="date" id="given_date"
+          /></label>
+        </div>
+
+        <button onclick="calculateAge()">Calculate</button>
+      </div>
+
+      <h2 class="text-center" style="display: none;" id="msg">Your age is :</h2>
+      <div id="output_box" style="display: none;">
+        <span id="years"></span>
+        <span id="months"></span>
+        <span id="days"></span>
+      </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
